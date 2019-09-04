@@ -1,0 +1,16 @@
+{
+  "name": "storeaffi-gamer",
+  "version": "1.0.0",
+  "description": "Store",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/blog.html",
+    "prod": "parcel build src/blog.html"
+  },
+  "author": "Cleibert Mora",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.22.10"
+  }
+}

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,900&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+$main: #2a4578;
+$light: #fff;
+$dark : #1c1c1b;
+$gray : #ebebeb;
+$rgbdark: 28, 28, 27;
+$shadow: 2px 2px 7px 4px rgba(0,0,0,0.50);
+$shadow-hard: 50px 100px 100px 10px rgba(0, 0, 0, 0.7);
+$border-radius: 0 0 6rem 0;
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    background: $dark;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+// Utility Classes
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.post-thumbnail {
+    width:100%;
+    max-height: 12rem;
+    object-fit: cover;
+}
+
+.img-zoom-in {
+    transform: scale(1);
+    overflow: hidden;
+    transition: all 1s;
+    
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.btn-menu {
+    display: block;
+    position: fixed;
+    z-index: 2;
+    right: 1.5rem;
+    bottom: 2.5rem;
+    color: $light;
+    
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked + label {
+        background: $main;
+        color: $light;
+        box-shadow: none;
+        padding: 0.6rem 1rem;
+        transition:box-shadow 0.5s ease 0s;
+        transition:padding 0.5s ease 0s;
+
+        i{
+            transform: rotate(-180deg);
+            transition:transform 0.2s ease 0s;
+        }
+    }
+
+    label {
+        background: $main;
+        font-size: 2.5rem;
+        padding: 1rem 1.4rem;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: $shadow;
+        transition:box-shadow 0.5s ease 0s;
+        transition:padding 0.5s ease 0s;
+        
+        i{
+            transform: rotate(0deg);
+            transition:transform 0.5s ease 0s;
+        }
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+}
+
+.btn-primary {
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: $main;
+    padding: 1rem;
+    color: $light;
+    border-radius: 2rem;
+    transition: all 0.5s ease 0s;
+
+    &:hover{
+        padding: 1rem 1.5rem;
+        transform: translateY(10px);
+        transition: all 0.5s ease 0s;
+    }
+}
+
+.cover {
+    object-fit: cover;
+}
+
+form {
+    .input-header{
+        display: inline;
+        background-color: rbga(255, 255, 255, 0.5);
+        border-radius: 2rem;
+        padding: 1.1rem 4vw 1.1rem 1rem;
+        box-sizing: border-box;
+        border: none;
+        font-size: 1rem;
+        opacity: 0.5;
+        
+        &:hover{
+            opacity:1;
+            transition: all 1s ease 0s;
+        }
+    }
+}
+
+.btn-share {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    //padding: 1rem 1.2rem;
+    border-radius: 50%;
+    color: $light;
+    text-transform: none;
+    text-decoration: none;
+
+    &.facebook{
+        background: $main;
+    }
+
+    &.twitter {
+        background: steelblue;
+    }
+
+    &.pinterest {
+        background: maroon;
+    }
+}
