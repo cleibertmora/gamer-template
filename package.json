@@ -4,8 +4,8 @@
   "description": "Store",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/blog.html",
-    "prod": "parcel build src/blog.html"
+    "dev": "parcel src/store-category.html",
+    "prod": "parcel build src/store-category.html"
   },
   "author": "Cleibert Mora",
   "license": "ISC",

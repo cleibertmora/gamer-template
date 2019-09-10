@@ -384,6 +384,16 @@ main {
             top: 1rem;
         }
     }
+
+    &.store {
+        .posts {
+            .post {
+                .post-thumbnail {
+                    
+                }
+            }
+        }
+    }
 }
 
 .latest_post {
@@ -425,6 +435,12 @@ main {
         &:hover{
             padding: 5rem 1rem 0.5rem 1rem;
         }
+    }
+}
+
+.products{
+    .product {
+        
     }
 }
 
